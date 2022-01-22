@@ -17,7 +17,7 @@ npm run dev
 ### Run the client locally
 In order to run the client execute the following commands:
 ```
-git clone https://github.com/BarZamsky/blogs-app-client.git
+cd client
 npm install
 npm run start
 ```
