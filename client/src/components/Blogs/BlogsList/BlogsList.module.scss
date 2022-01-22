@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba(243, 244, 246, 0.1),
+                  #ccc
+  );
+  .title {
+    color: #282c34;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .blogs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: clamp(20rem, calc(20rem + 2vw), 22rem);
+      box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: 1em;
+      background: #ECE9E6;
+      background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+      cursor: pointer;
+      .cardImage {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 1em 1em 0 0;
+      }
+      .cardBody {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        .tag {
+          align-self: flex-start;
+          padding: 5px 8px;
+          border-radius: 12px;
+          font-size: 12px;
+          background-color: #734ae8;
+          background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+          color: #fafafa;
+          &.Travel {
+            background-color: #d5adc8;
+            background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+          }
+          &.Food {
+            background-color: #21d190;
+            background-image: linear-gradient(315deg, #21d190 0%, #d65bca 74%);
+          }
+        }
+      }
+      .cardFooter {
+        display: flex;
+        padding: 12px;
+        margin-top: auto;
+        .userInfo {
+          color: #666;
+        }
+      }
+    }
+  }
+}
